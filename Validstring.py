@@ -1,5 +1,12 @@
-s = 'How do you turn this on' # this should be invalid, do you see it
-a = set(s)
+"""Sherlock considers a string to be valid if it all characters of the string appear the same number of times.
+ It is also valid if he can remove just  character at  index in the string, 
+ and the remaining characters will occur the same number of times. Given a string , determine if it is valid.
+
+For example, if , it is a valid string because frequencies are . 
+So is  because we can remove one  and have  of each character in the remaining string.
+ If  however, the string is not valid as we can only remove  occurrence of . That would leave character frequencies of ."""
+s = 'How do you turn this on' 
+a = se1t(s)
 c = list(a) 
 d = [s.count(c[i]) for i in range(0,len(c))]
 d.sort()
@@ -19,13 +26,11 @@ if d[0] == 1:
     print('invalid1')
   elif d[0] == d[len(d)-2] and d[len(d)-1] > 2:
     print('invalid5')
-#if d[0] == 1 and d[1]>1:
-  #if max(d) != min(d) + 1:
-    #print('invalid2')
+
 if d[0] != 1:
   if d[0] == d[len(d)-1] - 1 and d[0] == d[len(d)-2]:
     print('valid4')
-  elif d[0] != d[len(c)-2]: # 
+  elif d[0] != d[len(c)-2]: #
     print('invalid3') 
   elif d[0] != d[len(c)-1]:
     print('invalid6')
@@ -33,7 +38,4 @@ if d[0] != 1:
 
     
     
-    
- # hoc cai course 2
-# ok. Ko thi 2 dua them bai tap cung dc :)
 
